@@ -1,0 +1,23 @@
+# ~/.config/sxhkd/sxhkdrc
+
+# --- Volume Controls ---
+# (Using the keysyms you found with xev)
+
+# Volume Up
+XF86AudioRaiseVolume
+    amixer sset Master 5%+
+
+# Volume Down
+XF86AudioLowerVolume
+    amixer sset Master 5%-
+
+# Mute/Unmute Toggle
+XF86AudioMute
+    amixer sset Master toggle
+
+
+# --- Screenshot ---
+# Note: You need to install a screenshot tool. 'scrot' is a great lightweight option.
+# Run: sudo apt install scrot
+Print
+    scrot '%Y-%m-%d-%T_$wx$h_screenshot.png' -e 'mv $f ~/desktop/screenshots/'

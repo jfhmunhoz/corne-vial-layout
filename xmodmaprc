@@ -1,0 +1,20 @@
+# remaps file which is supposed to be sourced by .xinitrc usging:
+#   if [ -f $XDG_CONFIG_HOME/remaps/xmodmaprc ]; then
+#     . $XDG_CONFIG_HOME/remaps/xmodmaprc
+#   fi
+
+
+# key remaps
+# custom mods located at /usr/share/X11/xkb/symbols/custom_remap
+
+# what these remaps do:
+#   set caps as ctrl
+#   set shift+space as tab
+#   set shift+backspace as del
+setxkbmap -option "ctrl:nocaps, symbols:custom_remap(custom_mods)"
+
+# tap/hold mods
+#   ctrl behaves as esc when tapped
+#   shift behaves as caps when tapped
+xcape -e 'Control_L=Escape'
+xcape -e 'Shift_L=Caps_Lock'
