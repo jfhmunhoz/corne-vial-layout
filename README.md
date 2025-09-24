@@ -15,5 +15,5 @@
 
 
 ## Non-Goals
-- I don't need a thousand media keys, I've only included the ones I might need fast in some situations (Mute, VolUp, VolDown, PrtScrn);
+- I don't need a thousand media keys, I've only included the ones I might need fast in some situations;
 - I don't want to overload my mentalstack with state variables from my software+keyboard, so premanently switching layers is used only when needed;
